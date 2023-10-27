@@ -191,7 +191,7 @@ textarea.form-control{
   height: 3.625em;
   border-radius: 0;
   padding-left: 22px;
-  color: #bbbbbb;
+  color: #242424;
   background-color: transparent;
   border:0;
   border-bottom:1px solid rgba(255,255,255,0.6);
@@ -488,7 +488,8 @@ ion-icon{
   width: 100%;
   padding: 0 1.5rem;
   border-bottom: 1px solid rgba(52,52,52,0.1);
-  height:100px;
+  background: #fff;
+  height:80px;
 }
 
 @media(min-width: 992px){
@@ -498,10 +499,13 @@ ion-icon{
 }
 
 .navbar,
-.navbar a,
+.navbar a{
+  color:#343434;
+}
+
 .navbar a:hover,
 .navbar a:focus{
-  color:#343434;
+  color:#B9986C;
 }
 
 .toggler{
@@ -529,7 +533,8 @@ ion-icon{
 }
 img{max-width: 100%;}
 
-.navbar .top-link{font-family: 'Poppins', sans-serif; text-transform:uppercase; padding: 0 40px 0 0;}
+.navbar .cambridge{padding: 0 40px 0 0;}
+.navbar .top-link{font-family: 'Poppins', sans-serif; text-transform:uppercase; padding: 0;}
 .navbar .top-link ul{margin:0; padding: 0;}
 .navbar .top-link ul li{display:inline-block; vertical-align:middle; margin:0; padding: 0 0 0 20px; letter-spacing:1px;}
 
@@ -543,7 +548,7 @@ img{max-width: 100%;}
   line-height: 1; top: 0;
 }
 .navbar-brand img {
-  max-width: 150px;
+  max-width: 290px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus{
@@ -872,14 +877,14 @@ img{max-width: 100%;}
 
 
 .navbar-white{
-  border-bottom: 1px solid rgba(255,255,255,0);
+  /*border-bottom: 1px solid rgba(255,255,255,0);*/
 }
 
 .navbar-white:not(.fixed) .phone,
 .navbar-white:not(.fixed) .email,
 .navbar-white:not(.fixed) a,
 .navbar-white:not(.fixed) a:hover{
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .navbar-white:not(.fixed) .navbar-nav-desctop li a{
@@ -901,7 +906,7 @@ img{max-width: 100%;}
 }
 
 .navbar-white:not(.fixed) .toggler-icon{
-  border-color: #fff;
+  /*border-color: #fff;*/
 }
 
 
@@ -1067,6 +1072,9 @@ h1 + .line{
   background-color: #fff;
 }
 
+
+#contact form .form-control, #contact form textarea.form-control{border-bottom: 1px solid rgba(0,0,0,0.6);}
+#contact .text-primary{color: #1A3967 !important;}
 
 
 /* 3.3 About */
