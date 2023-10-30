@@ -538,6 +538,7 @@ img{max-width: 100%;}
 .navbar .top-link ul{margin:0; padding: 0;}
 .navbar .top-link ul li{display:inline-block; vertical-align:middle; margin:0; padding: 0 0 0 20px; letter-spacing:1px;}
 .navbar .top-link ul li a{color:#1A3967;}
+.navbar .top-link ul li a:hover{color:#B9986C;}
 
 .navbar-brand{
   position: relative;
