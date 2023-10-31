@@ -32,21 +32,21 @@
             scrollingSpeed: 280,
             navigation:false,
             menu: '.navbar-nav',
-            anchors: ['home', 'about', 'experience', 'skills', 'projects', 'partners', 'testimonials', 'news', 'contact'],
+            //anchors: ['home', 'about', 'experience', 'skills', 'projects', 'partners', 'testimonials', 'news', 'contact'],
             afterRender: function(anchorLink, index){ 
-              NavbarColor();
+              //NavbarColor();
 
             },
             afterLoad: function(anchorLink, index){
                 $('.pp-section .intro').removeClass('animate');
                 $('.active .intro').addClass('animate');
-                NavbarColor();
+                //NavbarColor();
             }
         });
 
   
 
-        function NavbarColor(){
+       /* function NavbarColor(){
          if ($('.pp-section.active').hasClass('navbar-is-white')){
                 $('.navbar-desctop').addClass('navbar-white');
                 $('.progress-nav').addClass('progress-nav-white');
@@ -57,13 +57,14 @@
                 $('.progress-nav').removeClass('progress-nav-white');
                 $('.navbar-bottom').removeClass('navbar-bottom-white');
             }
-        }
+        }*/
     }
 
 
     /* Navbar toggler */
     $('.toggler').on('click',function(){
     	$('body').addClass('menu-is-open');
+    	$('.click-capture').show();
     });
 
     $('.close, .click-capture').on('click',function(){

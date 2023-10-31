@@ -9,8 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/jquery.pagepiling.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>kings college india</title>
+	<link rel="stylesheet" href="css/kings-menu.css" />
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>Kings College India</title>
   </head>
 <body>
    
@@ -43,15 +45,21 @@
 			<div class="cambridge"><img src="img/cambridge-assessment.png" alt=""></div>
 			
 		  <!-- Toggler -->
-	      <button class="toggler">
-	        <span class="toggler-icon"></span>
-	        <span class="toggler-icon"></span>
-	      <span class="toggler-icon"></span>
-	    </button>
 		</div>
 	  </div>
 	</nav>
-    
+	
+	<div class="mobileNav">
+                <button class="burger open-menu-js" aria-label="menu" title="Open menu" id="openMenuMobile" style="margin-right: 17px;">
+                    <span class="burger__iconWrapper"> <i class="burger__openIcon"></i> <i class="burger__closeIcon"></i> </span> <label for="openMenu">Menu</label>
+                </button>
+                <a href="#" class="mobileNav__link isContact js-openContactSlideOut"><i class="fa fa-envelope-open" aria-hidden="true"></i><span>Contact</span></a>
+                <a href="#" class="mobileNav__link isVisit"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Visit</span></a>
+            </div>
+	
+    <button class="burger-mb burger open-menu-js g-yellowCrest" aria-label="menu" title="Open menu" id="openMenu" style="margin-right: 17px;">
+                <span class="burger__iconWrapper"> <i class="burger__openIcon"></i> <i class="burger__closeIcon"></i> </span> <label for="openMenu">Menu</label>
+            </button>
 
     <nav class="navbar-bottom">
 	  <div class="social">
@@ -69,33 +77,175 @@
     </nav>
 
     <!-- Navbar Mobile -->  
-    <nav  class="navbar navbar-mobile">
-      <ion-icon class="close" name="close-outline"></ion-icon>
-	  
-	  <div id="close-sidebar"><span></span></div>
-
-      <!-- language -->
-      <!--ul class="language">
-         <li class="active"><a href="#">ENG</a></li>
-         <li><a href="#">FRA</a></li>
-         <li><a href="#">GER</a></li>
-      </ul-->
-
-      <ul class="navbar-nav navbar-nav-mobile">
-        <li class="active"><a class="nav-link active" data-menuanchor="home" href="#">Home</a></li>
-        <li><a class="nav-link" data-menuanchor="about" href="#">About</a></li>
-        <li><a class="nav-link" data-menuanchor="experience" href="#">Experience</a></li>
-        <li><a class="nav-link" data-menuanchor="skills" href="#">Skills</a></li>
-        <li><a class="nav-link" data-menuanchor="projects" href="#">Projects</a></li>
-        <li><a class="nav-link" data-menuanchor="partners" href="#">Partners</a></li>
-        <li><a class="nav-link" data-menuanchor="testimonials" href="#">Testimonials</a></li>
-        <li><a class="nav-link" data-menuanchor="news" href="#">News</a></li>
-        <li><a class="nav-link" data-menuanchor="contact" href="#">Contact</a></li>
-      </ul>
-      <div class="navbar-mobile-footer">
-        <p>© Kings College India. 2023. All Rights Reserved.</p>
-      </div>
-    </nav>
+    <div class="kings-menu generated" style="overflow: auto; display: none;">
+            <div class="kings-menu__inner" style="right: 17px;">
+                <div class="menu-mobile-helper">
+                    <div class="menu-container" style="height: 455px; min-height: 0px; margin-bottom: 0px;">
+                        <div class="first-level cm-levels">
+                            <div class="cm-absolute">
+                                <div class="cml-scroll">
+                                    <div class="cml-table">
+                                        <div class="cml-tc">
+                                            <ul class="cm-level cm-first-level cm-level-js" style="display: none;">
+                                                <li class="cm-item-js cm-item">
+                                                    <a href="" class="current cm-link"><span>Home</span></a>
+                                                </li>
+                                                <li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-2">
+                                                    <a href="#" class="cm-link-open-level cm-link">
+                                                        <span>Admissions</span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+												<li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-1">
+                                                    <a href="#"
+                                                        class="cm-link-open-level cm-link">
+                                                        <span>About Us</span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+                                                <li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-3">
+												<a href="#" class="cm-link-open-level cm-link">
+                                                        <span>Academic Programs</span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+                                                <li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-4">
+                                                    <a href="#" class="cm-link-open-level cm-link">
+                                                        <span>Life at Kings</span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+                                                <li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-5">
+                                                    <a href="#" class="cm-link-open-level cm-link">
+                                                        <span>Boarding</span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+                                                <li class="has-level-js has-level cm-item-js cm-item" data-open="cm-open-2-6">
+                                                    <a href="#" class="cm-link-open-level cm-link">
+                                                        <span>Connect </span>
+                                                        <div class="arrow"><i class="fa fa-angle-right"></i></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="scroll-down-wrapper" title="Scroll Down" aria-hidden="true"><i class="scroll-level-down g-longArrow isDownOriented"></i></button>
+                            </div>
+                        </div>
+                        <div class="second-level cm-levels">
+                            <div class="cm-absolute">
+                                <div class="cml-scroll">
+                                    <div class="cml-table">
+                                        <div class="cml-tc">
+                                            <ul data-open="cm-open-2-1" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+<span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Welcome to King's College India</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Vision , Values & Ethos</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Headmaster's Welcome
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Deputy Head's Message</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Board of Governors</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Our Parent School: King's College Taunton, UK</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Accreditations & Affiliations</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Facilities and Campus</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Directions & Maps</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Information Desk</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>International Community</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Alumni Success Stories</span></a></li>
+                                            </ul>
+                                            <ul data-open="cm-open-2-2" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Admission Process</span></a></li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Age Criteria</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Apply to King's</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Attend Open Day</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>International Pupils</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Fees</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Scholarship</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Term Dates</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Request a Prospectus</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Uniform</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Transport</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>FAQs</span></a></li>
+                                            </ul>
+                                            <ul data-open="cm-open-2-3" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Curriculum Overview</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Cambridge Pathway Program</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>EYFS- Nursery & Prep</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Junior School</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>IGCSE , AS & A Levels</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>AS & A Levels</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Faculty and Specializations</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>EAL</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Enrichment Program</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Academic Calendar</span></a></li>
+                                            </ul>
+                                            <ul data-open="cm-open-2-4" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Student Life</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Co-curricular Activities</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Sports and Athletics</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Creative & Performing Arts</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Students Prefect Body</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Student Achievements</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Student Exchange Program</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>College Advice and Counseling</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>University Destinations</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Houses</span></a></li>
+												
+                                            </ul>
+                                            <ul data-open="cm-open-2-5" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Boarding</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Boarding Philosophy</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Boarding Life Experience</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Boarding Houses</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Residential Facilities</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Pastoral Care</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Health & Wellness</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Safety & Security</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Counselling and Guidance</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Health and Wellness</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Safety and Security</span></a></li>
+                                            </ul>
+                                            <ul data-open="cm-open-2-6" class="cm-level cm-level-second cm-level-js" style="display: none;">
+                                                <li class="cm__item-ref cm-item-js cm-item">
+                                                    <div class="cm__title-ref level-close-js"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><span>Back</span></div>
+                                                </li>
+                                                <li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>News & Events</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Newsletter</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Headmaster's Reports</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Calendar</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Blog</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Video Gallery</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Alumni</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Career Opportunities</span></a></li>
+												<li class="cm-item-js cm-item"><a href="#" class="cm-link"><span>Contact Us</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="scroll-down-wrapper" title="Scroll Down" aria-hidden="true"><i class="scroll-level-down g-longArrow isDownOriented"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 
     <div id="pagepiling">
 
@@ -474,10 +624,28 @@
 					 <div class="col-md-4">
 					 	<h2 class="">Contact</h2>
 					 	<p class="text-dark">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
-				<h3 class=" mt-5 pt-5">A 1 Sector 5, Rohtak</h3>
+				<h3 class=" mt-5 pt-0">A 1 Sector 5, Rohtak</h3>
 				<h3 class="text-primary">+91 7082005414</h3>
 				<p class="text-dark mt-3">admissions@kingscollegeindia.in</p>
 				<p class="text-dark mt-3">schoolsecretary@kingscollegeindia.in</p>
+				
+				<div class="icon-ft">
+				  <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+				  <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+				  <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+				  <a href="#" target="_blank"><i class="fa fa-instagram"></i></a> 			
+				  <a href="#" target="_blank"><i class="fa fa-youtube"></i></a> 			
+				</div>
+				
+				<div class="ft-links">
+				  <ul>
+				    <li><a href="#">Site Map</a></li>
+					<li><a href="#">Legacy & History</a></li>
+					<li><a href="#">Admission Process</a></li>
+					<li><a href="#">Accreditations & Affiliations</a></li> 			
+				  </ul>
+				</div>
+		  
 				 </div>
 				 <div class="col-md-5 offset-md-2">
 				 	<h3 class="mt-0">Get in <span class="text-primary">touch</span></h3>
@@ -507,31 +675,16 @@
    </section>
   </div>
 
-  <!-- Scrollbar -->
-   <div class="progress-nav">
-    <ul class="navbar-nav">
-      <li data-menuanchor="home" class="active"></li>
-      <li data-menuanchor="about"></li>
-      <li data-menuanchor="experience"></li>
-      <li data-menuanchor="skills"></li>
-      <li data-menuanchor="projects"></li>
-      <li data-menuanchor="partners"></li>
-      <!--li data-menuanchor="testimonials"></li>
-      <li data-menuanchor="news"></li-->
-      <li data-menuanchor="contact"></li>
-    </ul>
-  </div>
-
   <!-- Optional JavaScript -->
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/popper.min.js" ></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="../../../unpkg.com/ionicons%405.0.0/dist/ionicons.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/jquery.pagepiling.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/interface.js"></script>
+  <script src="js/interface.js"></script>  
+	<script defer="" src="js/kings-menu.js"></script>
 </body>
 
 </html>
